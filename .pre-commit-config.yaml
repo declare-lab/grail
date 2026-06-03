@@ -1,0 +1,25 @@
+repos:
+  # 1. Standard Housekeeping Hooks
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: trailing-whitespace      # Removes extra spaces at the end of lines
+      - id: end-of-file-fixer       # Ensures a blank line at the end of files
+      - id: check-yaml               # Checks syntax of YAML files
+      - id: check-added-large-files  # Prevents huge files (500kb+) from being committed
+        args: ['--maxkb=2000']
+      - id: debug-statements         # Prevents committing 'breakpoint()' or 'pdb' calls
+
+  # 2. Sort Imports (isort)
+  - repo: https://github.com/pycqa/isort
+    rev: 5.13.2
+    hooks:
+      - id: isort
+        args: ["--profile", "black"] # Crucial: tells isort to play nice with Black
+
+  # 3. The Formatter (Black)
+  - repo: https://github.com/psf/black
+    rev: 24.1.1
+    hooks:
+      - id: black
+        language_version: python3

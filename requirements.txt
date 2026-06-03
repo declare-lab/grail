@@ -1,0 +1,12 @@
+trl[vllm]
+transformers
+accelerate
+torch
+datasets
+math-verify[antlr4_13_2]
+notebook
+deepspeed
+colorlog
+peft
+wandb
+matplotlib
