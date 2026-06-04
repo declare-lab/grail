@@ -1,6 +1,6 @@
 # GRAIL: Gradient-Reweighted Advantages for Reinforcement Learning with Verifiable Rewards
 
-Official codebase for the paper **"GRAIL: Gradient-Reweighted Advantages for Reinforcement Learning with Verifiable Rewards"** (June 2026), authored by *Tej Deep Pala, Vernon Toh, and Soujanya Poria* at the **DeCLaRe Lab, Nanyang Technological University**.
+Official codebase for the paper [**"GRAIL: Gradient-Reweighted Advantages for Reinforcement Learning with Verifiable Rewards"**](http://arxiv.org/abs/2606.04889), authored by *Tej Deep Pala, Vernon Toh, and Soujanya Poria* at the **DeCLaRe Lab, Nanyang Technological University**.
 
 ## 📌 Abstract
 
@@ -115,3 +115,15 @@ bash token_analysis.sh
 This pipeline:
 1. Runs [compute_checkpoint_stats.py](./src/eval/compute_checkpoint_stats.py) to extract token gradients and weights post-hoc.
 2. Runs [aggregate_and_plot.py](./src/eval/aggregate_and_plot.py) to generate plots showing the U-shape distribution of weights across normalized reasoning spans.
+
+```bibtex
+@misc{pala2026grail,
+      title={GRAIL: Gradient-Reweighted Advantages for Reinforcement Learning with Verifiable Rewards},
+      author={Tej Deep Pala and Vernon Toh and Soujanya Poria},
+      year={2026},
+      eprint={2606.04889},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2606.04889},
+}
+```
